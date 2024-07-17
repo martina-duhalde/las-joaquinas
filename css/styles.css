@@ -180,8 +180,7 @@ header nav ul li a:hover {
     color: white;
 }
 
-
-.gangas-contenedor {
+.outlet-contenedor {
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -190,7 +189,7 @@ header nav ul li a:hover {
     padding: 20px;
 }
 
-.gangas .gangas-contenedor div {
+.outlet .outlet-contenedor div {
     border: 1px solid gray;
     width: 320px;
     height: 340px;
@@ -198,25 +197,26 @@ header nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-.gangas {
+.outlet {
     width: 100%;
     text-align: center;
     padding: 25px;
 }
 
-.gangas h2 {
+.outlet h2 {
     background-color: rgb(179, 107, 107);
     color: white;
     font-size: 20px;
     padding: 15px;
 }
 
-.gangas div h3 {
-    font-size: 15px;
-    margin-bottom: 18px;
+.outlet div h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
 }
 
-.gangas div a {
+.outlet div a {
     font-size: 12px;
     text-decoration: none;
     background-color: rgba(87, 40, 40, );
@@ -224,9 +224,13 @@ header nav ul li a:hover {
     padding: 10px;
 }
 
-.gangas div img {
+.outlet div img {
     width: 200px;
     height: 250px;
+}
+
+.outlet a:hover {
+    background-color: rgba(87, 40, 40, 0.466);
 }
 
 .destacados-contenedor {
@@ -254,21 +258,48 @@ header nav ul li a:hover {
     font-size: 12px;
     text-decoration: none;
     color: white;
-    background-color: rgba(87, 40, 40, 0.466);
+    background-color: rgba(87, 40, 40);
     padding: 10px;
 }
 
-.destacados h3 {
-    margin-bottom: 5px;
-}
-
 .destacados h2 {
+    font-size: 20px;
+    font-weight: bold;
     margin: 15px;
     padding: 15px;
     text-align: center;
 }
 
-/*OPACAR IMAGENNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN*/
+
+.destacados h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px
+}
+
+.destacados a:hover {
+    background-color: rgba(87, 40, 40, 0.466);
+}
+
+.carousel{
+    margin: auto;
+    width: 70%;
+}
+
+.carousel h2{
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 20px;
+    text-align: center;
+}
+
+
+.carousel-inner img{
+    padding: 15px;
+    width: 200px;
+    height: 480px;
+}
+
 .somos {
     display: flex;
     justify-content: space-between;
@@ -312,6 +343,29 @@ header nav ul li a:hover {
 .fixed img {
     width: 60px;
     height: 60px;
+}
+
+.login{
+    width: 60%;
+    height: 350px;
+    margin: 20px;
+    padding: 20px;
+    margin-top: 80px;
+}
+
+.login h2{
+
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.btn{
+    background-color: rgba(87, 40, 40);
+    color: white;
+}
+
+.row{
+    font-weight: 600;
 }
 
 
