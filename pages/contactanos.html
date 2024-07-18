@@ -49,40 +49,48 @@
     </header>
     <main>
         <section class="contactanos">
-            <form action="" method="" enctype="">
-                <div>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" id="nombre">
+            <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4">
                 </div>
-                <div>
-                    <label for="apellido">Apellido:</label>
-                    <input type="text" name="apellido" id="apellido">
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label">Contraseña</label>
+                  <input type="password" class="form-control" id="inputPassword4">
                 </div>
-                <div>
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email">
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label">Dirección</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
                 </div>
-                <div>
-                    <label for="contrasena">Contraseña:</label>
-                    <input type="password" name="contrasena" id="contrasena">
+                <div class="col-12">
+                  <label for="inputAddress2" class="form-label">Teléfono</label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
                 </div>
-                <div>
-                    <label for="">Genero</label>
-                    <label for="masculino">Masculino</label>
-                    <input type="radio" name="genero">
-                    <label for="femenino">Femenino</label>
-                    <input type="radio" name="genero">
-                    <label for="otro">Otro</label>
-                    <input type="radio" name="Otro">
+                <div class="col-md-6">
+                  <label for="inputCity" class="form-label">Ciudad</label>
+                  <input type="text" class="form-control" id="inputCity">
                 </div>
-                <div>
-                    <select name="" id="">Pais
-                        <option value="">Argentina</option>
-                        <option value="">Mexico</option>
-                        <option value="">Uruguay</option>
-                        <option value="">Paraguay</option>
-                        <option value="">Colombia</option>
-                    </select>
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">País</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div class="col-md-2">
+                  <label for="inputZip" class="form-label">Código postal</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Recuérdame
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn">Registrarme</button>
                 </div>
                 <div>
                     <label for="">Dejanos tu comentario</label>
@@ -91,10 +99,10 @@
                     <textarea name="" id="" cols="30" rows="10"></textarea>
                 </div>
                 <div>
-                    <input type="submit">
-                    <input type="reset">
+                    <input type="submit" class="btn">
+                    <input type="reset" class="btn">
                 </div>
-            </form>
+              </form>
         </section>
     </main>
     <div class="fixed">
