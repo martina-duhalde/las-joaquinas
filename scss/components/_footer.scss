@@ -1,0 +1,29 @@
+footer{
+    background-color: nth($colores,1);
+    @extend %flex;
+    flex-wrap: wrap;
+    h2{
+        font-size: nth($fuentes,7);
+        color: nth($colores,2);
+        text-align: center;
+        font-weight: lighter;
+        padding: 32px;
+    }
+    div{
+        img{
+            width: 35px;
+            height: 35px;
+            margin: 10px;
+        }
+        img{
+            width: 35px;
+            height: 35px;
+            margin: 10px;
+        }
+        img{
+            width: 35px;
+            height: 35px;
+            margin: 10px;
+        }
+    }
+}

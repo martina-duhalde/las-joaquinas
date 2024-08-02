@@ -1,0 +1,142 @@
+//!----------------------FUENTES----------------------------*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@156&display=swap');
+
+//!---------------------- RESET----------------------------
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif !important;
+}
+
+
+//?VARIABLES
+
+//!LISTA 
+$colores:#b36b6b,white,gray,#4b2121,rgba(87, 40, 40, 0.466),#691818,black;
+$fuentes:10px,12px,13px,15px,18px,20px,30px,40px,50px;
+
+//!MAPA
+$btn:(
+    bg-boton:#691818,
+    borde-caja:1px solid #691818,
+    color-text: white,
+);
+
+//!MIXIN
+@mixin flex($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+//!EXTEND
+%flex{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.btn{
+    background-color: map-get($btn, bg-boton);
+    border: map-get($btn, borde-caja);
+    color: map-get($btn, color-text);
+    transition: 0.5s;
+    &:hover{
+        background-color: nth($colores,5);
+        color: nth($colores,7);
+        font-weight: bolder;
+    }
+}
+
+.fixed {
+    position: fixed;
+    bottom: 80px;
+    right: 60px;
+
+    img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+
+.tarjetas {
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+
+    h1 {
+        background-color: nth($colores,1);
+        color: nth($colores,2);
+        font-size: nth($fuentes,6);
+        font-weight: bold;
+        padding: 15px;
+    }
+
+    .tarjetas-contenedor {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 20px;
+        
+
+        div {
+            border: 1px solid nth($colores,3);
+            width: 320px;
+            height: 340px;
+            text-align: center;
+            margin-bottom: 20px;
+            -moz-box-shadow: 13px 10px 46px -14px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 13px 10px 46px -14px rgba(0,0,0,0.75);
+            box-shadow: 13px 10px 46px -14px rgba(0,0,0,0.75);
+
+            img {
+                width: 200px;
+                height: 250px;
+            }
+
+            h2 {
+                font-size: nth($fuentes,4);
+                font-weight: bolder;
+                margin: 10px;
+            }
+
+            .boton {
+                background-color: nth($colores,4);
+                font-size: nth($fuentes,2);
+                text-decoration: none;
+                color: nth($colores,2);
+                padding: 10px;
+                transition:0.5s;
+                &:hover{
+                    background-color: nth($colores,5);
+                    color: nth($colores,7);
+                    font-weight: bolder;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

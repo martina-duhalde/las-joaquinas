@@ -1,0 +1,167 @@
+
+//!---------------------INDEX----------------------------
+
+.hero{
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    background-image: url(../img/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        font-size: nth($fuentes,9);
+        font-weight: 900;
+        color: nth($colores,2);
+        border-style: double;
+        display: inline-block;
+        padding: 20px;
+        margin-top: 10px;
+    }
+    h2{
+        font-weight: 900;
+        font-size: nth($fuentes,6);
+        padding: 20px;
+        margin-bottom: 30px;
+        color: nth($colores,2);
+    }
+    a{
+        text-decoration: none;
+        background-color: nth($colores,5);
+        color: nth($colores,2);
+        padding: 10px;
+        font-size: nth($fuentes,3);
+        border: 2px solid nth($colores,6);
+        transition: 0.5s;
+        &:hover{
+            background-color: nth($colores,6); 
+        }
+    }
+}
+
+.rincon{
+    @extend %flex;
+    flex-direction: row-reverse;
+    padding: 30px;
+    img{
+        width: 550px;
+        height: 800px;
+    }
+    div{
+        width: 50%;
+        h2{
+            font-size: nth($fuentes,7);
+            font-weight: bold;
+        }
+        p{
+            font-size: nth($fuentes,5);
+            font-weight: 900;
+        }
+    }
+}
+
+.grid-galeria{
+    width: 100%;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 350px;
+    gap: 10px;
+    .grid-item{
+        position: relative;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        h3{
+            position: absolute;
+            bottom: 0;
+            background-color: nth($colores,5);
+            color: nth($colores,2);
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+        }
+    }
+    .img-4{
+        grid-column: span 2;
+    }
+    .img-6{
+        grid-row: span 2;
+    }
+    .img-8{
+        grid-row: span 2;
+    }
+}
+
+//!----------------------PRODUCTOS----------------------------
+
+.carousel{
+    margin: auto;
+    width: 70%;
+    h2{
+        font-size: nth($fuentes,6);
+        font-weight: bolder;
+        margin: 20px;
+        text-align: center;
+    }
+    .carousel-inner img{
+        padding: 15px;
+        width: 200px;
+        height: 480px;
+    }
+}
+
+//!----------------------LOGIN----------------------------
+
+.login{
+    width: 60%;
+    height: 350px;
+    padding: 20px;
+    margin-top: 80px;
+    font-weight: bolder;
+h1{
+    font-size: nth($fuentes,4);
+    font-weight: bolder;
+}
+}
+
+
+//!----------------------NOSOTROS----------------------------
+
+.somos{
+    @extend %flex;
+    flex-direction: row-reverse;
+    padding: 30px;
+    img{
+        width: 50%;
+        }
+        div{
+            h1{
+                font-size: nth($fuentes,7);
+                font-weight: 600;
+                text-align: center;
+                padding: 20px;
+            }
+            p{
+                font-size: nth($fuentes,6);
+                font-weight: bold;
+                text-align: justify;
+                margin-right: 30px;
+            }
+        }
+    }
+
+//!----------------------CONTACTANOS----------------------------
+
+.contactanos{
+    margin: 10px;
+    padding: 5px;
+    font-weight: bold;
+}

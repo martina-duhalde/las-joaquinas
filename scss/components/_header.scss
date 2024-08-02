@@ -1,0 +1,22 @@
+header{
+    .menu{
+        background-color: nth($colores,1) !important;
+        .container-fluid{
+            img{
+                width: 80px;
+                height: 70px;
+            }
+            a{
+                font-weight: bold;
+                color: nth($colores,2) !important;
+            }
+        }
+        .dropdown-menu{
+            .dropdown-item{
+                font-size: nth($fuentes,2);
+                font-weight: bold;
+                color: nth($colores,7) !important;
+            }
+        }
+    }
+}

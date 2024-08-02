@@ -2,8 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@156&display=swap');
 
 
-
-
 /**-----------------------RESET--------------------------------*/
 * {
     margin: 0;
@@ -12,9 +10,8 @@
 }
 
 body {
-    font-family: "Montserrat", sans-serif !important; 
+    font-family: "Montserrat", sans-serif !important;
 }
-
 
 
 /**----------------------HEADER----------------------------*/
@@ -167,7 +164,7 @@ header nav ul li a:hover {
     color: white;
 }
 
-.outlet-contenedor {
+.tarjetas-contenedor {
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -176,7 +173,7 @@ header nav ul li a:hover {
     padding: 20px;
 }
 
-.outlet .outlet-contenedor div {
+.tarjetas .tarjetas-contenedor div {
     border: 1px solid gray;
     width: 320px;
     height: 340px;
@@ -184,26 +181,26 @@ header nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-.outlet {
+.tarjetas {
     width: 100%;
     text-align: center;
     padding: 25px;
 }
 
-.outlet h2 {
-    background-color: rgb(179, 107, 107);
+.tarjetas h2 {
+
     color: white;
     font-size: 20px;
     padding: 15px;
 }
 
-.outlet div h3 {
+.tarjetas div h3 {
     font-size: 18px;
     font-weight: bold;
     margin: 10px;
 }
 
-.outlet div a {
+.tarjetas div a {
     font-size: 12px;
     text-decoration: none;
     background-color: rgba(87, 40, 40, );
@@ -211,12 +208,12 @@ header nav ul li a:hover {
     padding: 10px;
 }
 
-.outlet div img {
+.tarjetas div img {
     width: 200px;
     height: 250px;
 }
 
-.outlet a:hover {
+.tarjetas a:hover {
     background-color: rgba(87, 40, 40, 0.466);
 }
 
@@ -320,17 +317,6 @@ header nav ul li a:hover {
     padding: 5px;
 }
 
-.fixed {
-    position: fixed;
-    bottom: 80px;
-    right: 60px;
-}
-
-
-.fixed img {
-    width: 60px;
-    height: 60px;
-}
 
 .login{
     width: 60%;
@@ -375,6 +361,7 @@ color: white;
 .row{
     font-weight: 600;
 }
+
 
 
 /**---------------------------FOOTER----------------------------*/
