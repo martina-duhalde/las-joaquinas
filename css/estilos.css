@@ -226,14 +226,6 @@ footer {
     width: 35px;
     height: 35px;
     margin: 10px; }
-  footer div img {
-    width: 35px;
-    height: 35px;
-    margin: 10px; }
-  footer div img {
-    width: 35px;
-    height: 35px;
-    margin: 10px; }
 
 @media screen and (max-width: 950px) {
   .grid-galeria {
@@ -254,8 +246,7 @@ footer {
   .rincon img {
     display: none; }
   .somos {
-    flex-direction: column; }
-  .somos {
+    flex-direction: column;
     text-align: center; }
   .somos img {
     display: none; } }
